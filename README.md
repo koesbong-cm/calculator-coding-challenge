@@ -27,7 +27,6 @@ There are a couple of tasks for you to do here:
   - if the expression starts with an operator or only contains operators, return 0
   - if it's a division by zero situation, return 0
   - add support for `squared` operation
-    - `'5 ^'` = `5^5`
     - `'2 3 ^'` = `2 ^ 3`
 
 For these tasks, we would like for you to timebox your effort to 1 hour at the most.
