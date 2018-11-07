@@ -21,7 +21,11 @@ function calculate(string) {
       } else if (expressionArr[i] == '-') {
         numbers.push(last2Numbers[0] - last2Numbers[1]);
       } else if (expressionArr[i] == '/') {
-        numbers.push(last2Numbers[0] / last2Numbers[1]);
+        if(last2Numbers[1] == 0) {
+          numbers.push(0);
+        } else {
+          numbers.push(last2Numbers[0] / last2Numbers[1]);
+        }
       } else if (expressionArr[i] == '*') {
         numbers.push(last2Numbers[0] * last2Numbers[1]);
       } else if(expressionArr[i] == '^') {
