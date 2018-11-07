@@ -2,7 +2,7 @@ function calculate(string) {
   var numbers = [];
   var hasOperator = false;
 
-  if (string === undefined) {
+  if (!string || string.length < 1 || isNaN(string[0])) {
     return 0;
   }
 

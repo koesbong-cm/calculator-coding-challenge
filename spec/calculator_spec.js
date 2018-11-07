@@ -9,5 +9,8 @@ describe('Calculator', function() {
     expect(calculate('1 3 40')).toEqual(40);
     expect(calculate('1 34 100.3')).toEqual(100.3);
     expect(calculate()).toEqual(0);
+    expect(calculate('')).toEqual(0);
+    expect(calculate('+ 3 40')).toEqual(0);
+    expect(calculate('+ - /')).toEqual(0);
   })
 });
